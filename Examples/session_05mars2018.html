@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<style>
+            div.container {
+                width:840px; 
+				margin:auto; 
+				border: 1px solid gray;
+            }
+			
+			div.marquee_container{
+				background-color:#60D2EC;
+			}
+
+            footer {
+                padding: 1em;
+                color: white;
+                background-color: black;
+                clear: left;
+                text-align: center;
+            }
+			
+			#center_section{
+				display:block; 
+				float: left; 
+				max-width: 400px;
+				height:500px;
+	        }
+			
+			#right_section{
+				float: left; 
+				max-width: 200px;
+				height:500px;
+				margin-left:10px;
+		    }
+			
+			#left_section{
+				float: left; 
+				max-width: 240px;
+		    }
+        </style>
+    </head>
+    <body>
+	     
+        <div class="container">            
+            <header">
+                <img src="computer_club.jpg">
+            </header>
+            
+            <div class="marquee_container"><marquee>Welcome to the Computer Club</marquee></div>
+                
+            <div id="left_section">
+                <h2>Our Goals</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#">Learn HTML</a></li>
+                        <li><a href="#">Learn Java Script</a></li>
+                        <li><a href="#">Learn CSS</a></li>
+                        <li><a href="#">Learn Web design/Implementation</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+			<div id="center_section"">
+                
+                <video width="380" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+					<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+               
+                <h1>Learn computing</h1>
+                <p>Engaging in the creation of computational artifacts prepares students for more than careers as computer scientists or as programmers. It supports young people’s development as computational thinkers – individuals who can draw on computational concepts, practices, and perspectives in all aspects of their lives, across disciplines and contexts.</p>
+            </div>
+			
+            <div id="right_section"">
+                <h2>Our projects</h2>
+                <a href="./James/index.html">Visit James' Site</a><br>
+                <a href="./Ben/index.html">Visit Ben's Site</a><br>
+                <a href="./Diego/index.html">Visit Diego's Site</a><br>
+                <a href="./Max/index.html">Visit Max's Site</a><br>
+                <a href="./Jennifer/index.html">Visit Jennifer's Site</a><br>
+                <a href="./Evelyn/index.html">Visit Evelyn's Site</a><br>
+                <a href="./Emily/index.html">Visit Emily's Site</a><br>
+            </div>
+            
+            <footer>Copyright &copy; 2017, the Computer Club</footer>
+            
+        </div>
+    </body>
+</html>
