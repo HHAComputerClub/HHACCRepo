@@ -3,68 +3,68 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
     <style>
-{
-    -webkit-animation: color-change 1s infinite;
-    -moz-animation: color-change 1s infinite;
-    -o-animation: color-change 1s infinite;
-    -ms-animation: color-change 1s infinite;
-    animation: color-change 1s infinite;
-}
+    p {
+        -webkit-animation: color-change 1s infinite;
+        -moz-animation: color-change 1s infinite;
+        -o-animation: color-change 1s infinite;
+        -ms-animation: color-change 1s infinite;
+        animation: color-change 1s infinite;
+    }
+    @-webkit-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-moz-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-ms-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @-o-keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    @keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
 
-@-webkit-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
-}
-@-moz-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
-}
-@-ms-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
-}
-@-o-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
-}
-@keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
-}
+    img {
+      animation: MoveUpDown 3s linear infinite;
+      position: absolute;
+      right: 0;
+      bottom: 0px;   
+    }
+    @keyframes MoveUpDown {
+      0% {
+        bottom: 0;
+        right: 0;
+      }
+      25% {
+        bottom: 100px;
+        left: 5px;
+      }
+      50% {
+        bottom: 0px;
+        left: 5px;
+      }
+      75% {
+        bottom: 100px;
+        left: 5px;
+      }
+      100% {
+        bottom: 100px;
+        left: 5px;
+      }
+   }
         
-img {
-  animation: MoveUpDown 3s linear infinite;
-  position: absolute;
-  right: 0;
-  bottom: 0px;   
-}
-@keyframes MoveUpDown {
-  0% {
-    bottom: 0;
-    right: 0;
-  }
-  25% {
-    bottom: 100px;
-    left: 5px;
-  }
-  50% {
-    bottom: 0px;
-    left: 5px;
-  }
-  75% {
-    bottom: 100px;
-    left: 5px;
-  }
-  100% {
-    bottom: 100px;
-    left: 5px;
-  }
-      
     </style>
 </head>
     <body>
