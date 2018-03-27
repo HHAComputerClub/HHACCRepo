@@ -3,7 +3,17 @@
 <head>
     <style>
     
-@-webkit-keyframes img {
+img {
+
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
     0%   {left:0px; top:0px;}
     25%  {left:200px; top:0px;}
     50%  {left:200px; top:200px;}
@@ -12,7 +22,7 @@
 }
 
 /* Standard syntax */
-@keyframes img {
+@keyframes example {
     0%   {left:0px; top:0px;}
     25%  {left:200px; top:0px;}
     50%  {left:200px; top:200px;}
