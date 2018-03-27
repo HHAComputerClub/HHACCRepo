@@ -4,14 +4,34 @@
 <head>
     <style>
         
+    h1  {
+        -webkit-animation: textColor 10s infinite; /* Safari 4.0 - 8.0 */
+        animation: textColor 10s infinite;
+    }
+        
+    @-webkit-keyframes textColor {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:red;}
+     }
+
+    /* Standard syntax */
+    @keyframes textColor {
+        0%   {background-color:red;}
+        25%  {background-color:yellow;}
+        50%  {background-color:blue;}
+        75%  {background-color:green;}
+        100% {background-color:red;}
+     }
+        
     div {
-        width: 100px;
-        height: 50px;
         font-weight: bold;
         position: relative;
         -webkit-animation: slideText 10s infinite; /* Safari 4.0 - 8.0 */
         animation: slideText 10s infinite;
-    }
+     }
 
     /* Safari 4.0 - 8.0 */
     #div1 {-webkit-animation-timing-function: linear;}
@@ -47,26 +67,11 @@
     }
         
     @keyframes MoveUpDown {
-      0% {
-        bottom: 0;
-        right: 0;
-      }
-      25% {
-        bottom: 100px;
-        right: 25%;
-      }
-      50% {
-        bottom: 0px;
-        right: 50%;
-      }
-      75% {
-        bottom: 100px;
-        right: 70%;
-      }
-      100% {
-        bottom: 0px;
-        right: 100%;
-      }
+      0% {bottom: 0; right: 0;}
+      25% {bottom: 100px; right: 25%;}
+      50% {bottom: 0px; right: 50%;}
+      75% {bottom: 100px; right: 75%;}
+      100% {bottom: 0px; right: 100%;}
    }
         
     </style>
