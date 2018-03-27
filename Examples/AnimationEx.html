@@ -5,12 +5,12 @@
     <style>
         
     div {
-        width: 100%;
+        width: 100px;
         height: 50px;
         font-weight: bold;
         position: relative;
-        -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-        animation: mymove 5s infinite;
+        -webkit-animation: slideText 10s infinite; /* Safari 4.0 - 8.0 */
+        animation: slideText 10s infinite;
     }
 
     /* Safari 4.0 - 8.0 */
@@ -28,13 +28,13 @@
     #div5 {animation-timing-function: ease-in-out;}
 
     /* Safari 4.0 - 8.0 */
-    @-webkit-keyframes mymove {
+    @-webkit-keyframes slideText {
         from {left: 0px;}
         to {left: 100%;}
     }
 
     /* Standard syntax */
-    @keyframes mymove {
+    @keyframes slideText {
         from {left: 0px;}
         to {left: 100%;}
     }
