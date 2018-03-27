@@ -5,11 +5,12 @@
     
 img {
   animation: MoveUpDown 2s linear infinite;
+  -webkit-animation: MoveSide 2s infinite alternate;
+  animation: MoveSide 2s infinite alternate;
   position: absolute;
   right: 0;
-  bottom: 30px;  
+  bottom: 30px;   
 }
-
 @keyframes MoveUpDown {
   0%, 100% {
     bottom: 0;
@@ -19,6 +20,14 @@ img {
     bottom: 100px;
     left: 5px;
   }
+  @-webkit-keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
+    }
+@keyframes mover {
+   0% { transform: translateX(0); }
+   100% { transform: translateX(20px); }
+    }
 }
        
     </style>
