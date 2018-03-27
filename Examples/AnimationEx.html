@@ -5,6 +5,7 @@
     
 img {
   animation: MoveUpDown 2s linear infinite;
+  animation: MoveLeft 2s linear infinite;
   position: absolute;
   right: 0;
   bottom: 0px;   
@@ -16,7 +17,14 @@ img {
   }
   50% {
     bottom: 100px;
-    transform: translateX(20px);
+  }
+ @keyframes MoveLeft {
+  0%, 100% {
+    bottom: 0;
+    right: 0;
+  }
+  50% {
+    left: 20px;
   }
 }
        
