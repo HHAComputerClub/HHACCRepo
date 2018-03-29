@@ -63,12 +63,13 @@
       z-index: -1;
       animation: MoveUpDown 5s linear infinite;
       position: absolute;
-      right: -50px;
-      bottom: 0px;   
+      right: 0px;
+      bottom: 0px;
+      overflow: hidden;
     }
         
     @keyframes MoveUpDown {
-      0% {bottom: 0; right:0;}
+      0% {bottom: 0; right: 0;}
       25% {bottom: 100px; right: 25%;}
       50% {bottom: 0px; right: 50%;}
       75% {bottom: 100px; right: 75%;}
