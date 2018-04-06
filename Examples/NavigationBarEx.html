@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <style>
+    
+    /* CSS for h1 */
+    h1 {
+        -webkit-animation: textColor 10s infinite; /* Safari 4.0 - 8.0 */
+        animation: textColor 10s infinite;
+    }
+    /* Changing between colors for text */    
+    @-webkit-keyframes textColor {
+        0%   {color:red;}
+        25%  {color:yellow;}
+        50%  {color:blue;}
+        75%  {color:green;}
+        100% {color:red;}
+     }
+    @keyframes textColor {
+        0%   {color:red;}
+        25%  {color:yellow;}
+        50%  {color:blue;}
+        75%  {color:green;}
+        100% {color:red;}
+     }
+    /* Sliding text across webpage */         
+    div {
+        font-weight: bold;
+        position: relative;
+        -webkit-animation: slideText 10s infinite; /* Safari 4.0 - 8.0 */
+        animation: slideText 10s infinite;
+     }
+    /* Differentiate between divs */       
+    #div1 {-webkit-animation-timing-function: linear;}
+    #div2 {-webkit-animation-timing-function: ease;}
+    #div3 {-webkit-animation-timing-function: ease-in;}
+    #div4 {-webkit-animation-timing-function: ease-out;}
+    #div5 {-webkit-animation-timing-function: ease-in-out;}
+ 
+    #div1 {animation-timing-function: linear;}
+    #div2 {animation-timing-function: ease;}
+    #div3 {animation-timing-function: ease-in;}
+    #div4 {animation-timing-function: ease-out;}
+    #div5 {animation-timing-function: ease-in-out;}
+     /* Setting how far the text goes */      
+    @-webkit-keyframes slideText {
+        from {left: 0px;}
+        to {left: 100%;}
+    }
+        
+    @keyframes slideText {
+        from {left: 0px;}
+        to {left: 100%;}
+    }
+      
+    /* Setting CSS for image to move up and down */     
+    img {
+      z-index: -1;
+      animation: MoveUpDown 5s linear infinite;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      overflow: hidden;
+    }
+        
+    @keyframes MoveUpDown {
+      0% {bottom: 0; right: 0;}
+      25% {bottom: 100px; right: 25%;}
+      50% {bottom: 0px; right: 50%;}
+      75% {bottom: 100px; right: 75%;}
+      100% {bottom: 0px; right: 100%;}
+   }
+        
+    </style>
+</head>
+    <body>
+
+        <div id ="div1"><h1>Animation is FUN!</h1></div>
+        <div id ="div2"><h1>Fluffy</h1></div>
+        <div id ="div3"><h1>Flying</h1></div>
+        <div id ="div4"><h1>Alpacas!</h1></div>                 
+    <img src="alpaca.jpg" />
+        
+    </body>
+</html>
