@@ -1,86 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
-    <style>
-    
-    /* CSS for h1 */
-    h1 {
-        -webkit-animation: textColor 10s infinite; /* Safari 4.0 - 8.0 */
-        animation: textColor 10s infinite;
-    }
-    /* Changing between colors for text */    
-    @-webkit-keyframes textColor {
-        0%   {color:red;}
-        25%  {color:yellow;}
-        50%  {color:blue;}
-        75%  {color:green;}
-        100% {color:red;}
-     }
-    @keyframes textColor {
-        0%   {color:red;}
-        25%  {color:yellow;}
-        50%  {color:blue;}
-        75%  {color:green;}
-        100% {color:red;}
-     }
-    /* Sliding text across webpage */         
-    div {
-        font-weight: bold;
-        position: relative;
-        -webkit-animation: slideText 10s infinite; /* Safari 4.0 - 8.0 */
-        animation: slideText 10s infinite;
-     }
-    /* Differentiate between divs */       
-    #div1 {-webkit-animation-timing-function: linear;}
-    #div2 {-webkit-animation-timing-function: ease;}
-    #div3 {-webkit-animation-timing-function: ease-in;}
-    #div4 {-webkit-animation-timing-function: ease-out;}
-    #div5 {-webkit-animation-timing-function: ease-in-out;}
- 
-    #div1 {animation-timing-function: linear;}
-    #div2 {animation-timing-function: ease;}
-    #div3 {animation-timing-function: ease-in;}
-    #div4 {animation-timing-function: ease-out;}
-    #div5 {animation-timing-function: ease-in-out;}
-     /* Setting how far the text goes */      
-    @-webkit-keyframes slideText {
-        from {left: 0px;}
-        to {left: 100%;}
-    }
-        
-    @keyframes slideText {
-        from {left: 0px;}
-        to {left: 100%;}
-    }
-      
-    /* Setting CSS for image to move up and down */     
-    img {
-      z-index: -1;
-      animation: MoveUpDown 5s linear infinite;
-      position: absolute;
-      right: 0px;
-      bottom: 0px;
-      overflow: hidden;
-    }
-        
-    @keyframes MoveUpDown {
-      0% {bottom: 0; right: 0;}
-      25% {bottom: 100px; right: 25%;}
-      50% {bottom: 0px; right: 50%;}
-      75% {bottom: 100px; right: 75%;}
-      100% {bottom: 0px; right: 100%;}
-   }
-        
-    </style>
-</head>
-    <body>
+<style>
+body {
+    margin: 0;
+}
 
-        <div id ="div1"><h1>Animation is FUN!</h1></div>
-        <div id ="div2"><h1>Fluffy</h1></div>
-        <div id ="div3"><h1>Flying</h1></div>
-        <div id ="div4"><h1>Alpacas!</h1></div>                 
-    <img src="alpaca.jpg" />
-        
-    </body>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+
+</body>
 </html>
