@@ -6,49 +6,22 @@ body {
 }
 
 h1 {
-    color: white;
+    color: black;
     text-align: center;
 }
 
 p {
     font-family: verdana;
     font-size: 20px;
+	text-align: center;
 }
 
 table {
-	width:15%;
-	height:auto;
-	border:3px solid black;
-	padding:0px;
-	margin:0px;
-}
-
-th {
-	width:auto;
-	height:auto;
-    background-color: #d5f4e6;
-	align: center;
-	padding:0px;
-	margin:0px;
-}
-
-tr {
-	width:auto;
-	height:auto;
-    background-color: #d5f4e6;
-	padding:0px;
-	margin:0px;
-}
-
-td {
-	width:auto;
-	height:auto;
-    background-color: #d5f4e6;
-	padding:0px;
-	margin:0px;
+	table-layout: fixed
 }
 
 img {
+	display: block;
 	width: auto;
 	height: auto;
 }
